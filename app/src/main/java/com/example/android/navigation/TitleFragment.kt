@@ -34,12 +34,14 @@ class TitleFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_title, container, false)
 
         binding.playButton.setOnClickListener { view : View ->
             view.findNavController().navigate(R.id.action_titleFragment_to_gameFragment)
         }
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_title, container, false)
+
+
 
     }
 
